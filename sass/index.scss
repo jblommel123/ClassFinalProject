@@ -44,9 +44,9 @@ a.nav-link {
     width: 200px;
     display: block;
     text-align: center;
+    margin: 2.5% 2.5%;
     &:hover{
         text-decoration: underline;
-
     }
 }
 
@@ -65,6 +65,13 @@ ul.nav-list{
     width: 90%;
     line-height: 30px;
     margin: 0% 2.5%;
+    flex-wrap: wrap;
+}
+
+section.member-list {
+    text-align: center;
+    margin: 2.5% 2.5%;
+    text-align: center;
 }
 
 .btn{
@@ -125,4 +132,36 @@ div.formRow{
      display: block;
      margin: 10px 60px ;
      font-size: 1.1rem;
+     background-color: $primary;
+     color: $tertiary;
+     &:hover{
+         text-decoration: underline;
+     }
+     border: none;
+
+     line-height: 25pt;
+ }
+
+ table {
+     margin: 2.5% 2.5%;
+     width: 95%;
+     text-align: center;
+     border: solid $secondary 0.2rem;
+     border-spacing: unset;
+ }
+ thead, tbody {
+     line-height: 25pt;
+ }
+
+ th,td {
+     border: solid $secondary 0.1rem;
+     border-spacing: 0 0;
+     column-span: 1;
+     vertical-align: middle;
+ }
+
+ h3 {
+     color: $primary;
+     text-align: center;
+     margin-bottom: 20px;
  }
