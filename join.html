@@ -11,7 +11,54 @@
     <!-- Navigation -->
     <!-- Form to fill out -->
     <form action="post">
+        <fieldset id="racerInfo">
+            <legend>Racer Registration</legend>
+            <div class="formRow">
+                <label for="firstName">First Name</label>
+                <input type="text" placeholder="John" name="firstName" id="firstName">
+            </div>
+            <div class="formRow">
+                <label for="lastName">Last Name</label>
+                <input type="text" placeholder="Doe" name="lastName" id="lastName">
+            </div>
+            <div class="formRow">
+                <label for="discordName">Discord Name</label>
+                <input type="text" placeholder="TheStig" name="discordName" id="discordName">
+            </div>
+            <div class="formRow">
+                <label for="roadIrating">Road iRating</label>
+                <input type="number" name="roadIrating" id="roadIrating" min="0" max="10000">
+            </div>
+            <div class="formRow">
+                <label for="ovalIrating">Oval iRating</label>
+                <input type="number" name="ovalIrating" id="ovalIrating" min="0" max="10000">
+            </div>
+            <div class="formRow">
+                <label for="dirtRoadIrating">Dirt Road iRating</label>
+                <input type="number" name="dirtRoadIrating" id="dirtRoadIrating">
+            </div>
+            <div class="formRow">
+                <label for="dirtOvalIrating">Dirt Oval iRating</label>
+                <input type="number" name="dirtOvalIrating" id="dirtOvalIrating">
+            </div>
+            <div class="formRow">
+                <label for="favoriteDiscipline">Favorite Discipline</label>
+                <select id="favoriteDiscipline">
+                    <option value="Road">Road </option>
+                    <option value="Oval"> Oval </option>
+                    <option value="Dirt Road">Dirt Road</option>
+                    <option value="Dirt Oval">Dirt Oval</option>
+                </select>
+            </div>
+            
+            <div class="formRow">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </fieldset>
         
     </form>
+
+    
 </body>
 </html>
