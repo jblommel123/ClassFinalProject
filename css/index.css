@@ -182,3 +182,15 @@ p.car-class-heading {
   display: block;
   width: 100%;
 }
+
+@media screen and (min-width: 1200px) {
+  ul.nav-list {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 720px) {
+  ul.nav-list {
+    margin: 5%;
+  }
+}
