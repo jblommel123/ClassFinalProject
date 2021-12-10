@@ -12,11 +12,24 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: orange;
 }
 
 h3 {
   color: white;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .nav-list-item {
@@ -183,6 +196,10 @@ p.car-class-heading {
   width: 100%;
 }
 
+img.game-img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   ul.nav-list {
     max-width: 80%;
@@ -192,5 +209,17 @@ p.car-class-heading {
 @media screen and (max-width: 720px) {
   ul.nav-list {
     margin: 5%;
+  }
+}
+@media print {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a::after {
+    content: " (" attr(href) ") ";
+    font-weight: bold;
+    word-wrap: break-word;
   }
 }

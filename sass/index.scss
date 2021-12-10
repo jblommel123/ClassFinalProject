@@ -21,12 +21,24 @@ h1{
 }
 
 h2 {
-    color: black;
+    color: $primary;
 }
 
 h3 {
-    color: white;
+    color: $secondary;
 }
+
+blockquote::before{
+    content: open-quote;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+ }
+blockquote::after{
+    content: close-quote;
+    font-size: 1.6rem;
+    font-weight: bold;
+ }
 
 .nav-list-item{
 align-self: center;
@@ -190,7 +202,9 @@ p.car-class-heading{
     width: 100%;
 }
 
-
+img.game-img {
+    width: 100%;
+}
 
 @media screen and (min-width:1200px) {
     ul.nav-list {
@@ -203,4 +217,19 @@ p.car-class-heading{
     ul.nav-list {
         margin: 5%;
     }
+}
+
+@media print {
+
+    a{
+        color: $tertiary;
+        text-decoration: none;
+     }
+     
+     a::after{
+        content: " (" attr(href) ") ";
+        font-weight: bold;
+        word-wrap: break-word;
+     }
+     
 }
